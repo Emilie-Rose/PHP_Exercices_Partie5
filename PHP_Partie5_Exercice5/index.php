@@ -18,7 +18,6 @@
     fclose($newPage3);
     ?>
     <a href="server2.php?langage=PHP&serveur=<?php
-    echo $_SERVER["HTTP_HOST"]?>">
-lien</a>
+    echo $_SERVER["HTTP_HOST"]?>">Afficher</a>
 </body>
 </html>

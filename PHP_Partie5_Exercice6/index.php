@@ -23,6 +23,6 @@
     $var=strip_tags("PHP");
     htmlspecialchars($var);
     echo $var;?>&serveur=
-    <?php echo $_SERVER["HTTP_HOST"]?>">lien</a>
+    <?php echo $_SERVER["HTTP_HOST"]?>">Afficher</a>
 </body>
 </html>

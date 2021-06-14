@@ -14,7 +14,7 @@
 
     <a href="target.php?nom=MOLINA&amp;prenom=Emilie&amp;age=32">Lien</a>
     <?php
-    $newPage=fopen("target.php","a+");
+    $newPage=fopen("page1.php","a+");
     fclose($newPage);
     ?>
 </body>

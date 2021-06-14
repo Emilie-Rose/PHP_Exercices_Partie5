@@ -14,7 +14,10 @@
     serveur existe, si oui affichez le sinon affichez une un message d'erreur.
 </p>
     <?php
-
+    $newPage2=fopen("server.php","a+");
+    fclose($newPage2);
     ?>
+    <a href="server.php?langage=PHP&serveur=
+    <?php echo $_SERVER["HTTP_HOST"]?>">Lien</a>
 </body>
 </html>

@@ -13,8 +13,16 @@
     "serveur" dirigeant sur une autre page. Vérifiez si les paramètres existent, 
     si oui affichez les sinon affichez une un message d'erreur. Vous devez 
     empêchez l'inclusion de balises html dans les paramètres.</p>
+    
     <?php
-
+    $newPage4=fopen("server3.php","a+");
+    fclose($newPage4);
     ?>
+
+    <a href="server3.php?langage=<?php
+    $var=strip_tags("PHP");
+    htmlspecialchars($var);
+    echo $var;?>&serveur=
+    <?php echo $_SERVER["HTTP_HOST"]?>">lien</a>
 </body>
 </html>

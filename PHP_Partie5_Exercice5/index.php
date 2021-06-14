@@ -12,8 +12,13 @@
     <p style="color:#8080FF">Créez un lien avec les paramètres "langage",
      "serveur" dirigeant sur une autre page. Vérifiez si les paramètres
       existants, si oui affichez les sinon affichez un message d'erreur.</p>
+    
     <?php
-
+    $newPage3=fopen("server2.php","a+");
+    fclose($newPage3);
     ?>
+    <a href="server2.php?langage=PHP&serveur=<?php
+    echo $_SERVER["HTTP_HOST"]?>">
+lien</a>
 </body>
 </html>
